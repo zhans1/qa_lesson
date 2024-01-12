@@ -1,8 +1,8 @@
 package guru.qa.lesson.tests;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 
@@ -21,7 +21,7 @@ public class SelenideRepositorySearch {
         $$("[data-testid=results-list]").first().$("a").click();
 
         //Assert - проверка
-        $("#repository-container-header").shouldHave(Condition.text("selenide / selenide"));
+        $("#repository-container-header").shouldHave(text("selenide / selenide"));
         sleep(5000);
 
     }
