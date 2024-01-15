@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-
 public class SelenideRepositorySearch {
     @Test
     void shouldhaveAtTheTop() {
@@ -22,7 +21,5 @@ public class SelenideRepositorySearch {
 
         //Assert - проверка
         $("#repository-container-header").shouldHave(text("selenide / selenide"));
-        sleep(5000);
-
     }
 }
